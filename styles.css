@@ -7,7 +7,12 @@ body {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
-
+/* Hide everything on mobile */
+@media (max-width: 768px) {
+    body {
+        display: none; /* Hides all content on mobile */
+    }
+}
 /* Navbar Styling */
 .navbar {
     background-color: #1E4F9F !important;
