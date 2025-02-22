@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Page</title>
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <script>
+        function checkScreenSize() {
+            if (window.innerWidth > 768) {
+                window.location.href = "index.html"; // Redirect to desktop page
+            }
+        }
+
+        // Check on page load
+        checkScreenSize();
+
+        // Check when resizing
+        window.addEventListener("resize", checkScreenSize);
+    </script>
+</head>
+<body>
+
+    <!-- Mobile Top Bar -->
+    <div class="mobile-header">
+        <h1>Lorem Ipsum is simply dummy text</h1>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <i class="bi bi-search search-icon"></i> <!-- Bootstrap Search Icon -->
+        <div class="separator"></div>
+        <div class="search-text">Search consultants here...</div>
+        <i class="bi bi-mic mic-icon"></i> <!-- Bootstrap Mic Icon -->
+    </div>
+
+    <!-- Address Section -->
+    <div class="address-container">
+        <span class="address-text">#103, Park View Street, Plot No.57, Chandigarh, 160007</span>
+        <button class="change-button">Change</button>
+    </div>
+
+    <!-- Images Section -->
+    <div class="image-container">
+        <img src="img/t1.png" alt="Image 1">
+        <img src="img/t2.png" alt="Image 2">
+        <img src="img/t3.png" alt="Image 3">
+    </div>
+
+       <!-- Live Consultants Heading & See All Button -->
+       <div class="consultants-header">
+        <h2>Live Consultants</h2>
+        <button class="see-all">See All</button>
+    </div>
+    <!-- Carousel for Consultants -->
+<div class="carousel-container">
+    <div class="carousel">
+        <div class="consultant-card">
+            <img src="img/j1.jpeg" alt="Consultant 1">
+            <div class="rate-badge">$1/min</div>
+            <div class="consultant-info">
+                <h3>Study Buddies</h3>
+                <div class="consultant-meta">
+                    <span class="calls">Calls: <b>300+</b></span>
+                    <span class="rating">
+                        <i class="bi bi-star-fill"></i> 4.8
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="consultant-card">
+            <img src="img/j2.jpeg" alt="Consultant 2">
+            <div class="rate-badge">$1/min</div>
+            <div class="consultant-info">
+                <h3>Grey Matters</h3>
+                <div class="consultant-meta">
+                    <span class="calls">Calls: 250+</span>
+                    <span class="rating">
+                        <i class="bi bi-star-fill"></i> 4.7
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="consultant-card">
+            <img src="img/j1.jpeg" alt="Consultant 3">
+            <div class="rate-badge">$1/min</div>
+            <div class="consultant-info">
+                <h3>Study Buddies</h3>
+                <div class="consultant-meta">
+                    <span class="calls">Calls: 400+</span>
+                    <span class="rating">
+                        <i class="bi bi-star-fill"></i> 4.9
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <!-- Live Consultants Heading & See All Button -->
+      <div class="consultants-header">
+        <h2>Popular Institutes</h2>
+        <button class="see-all">See All</button>
+    </div>
+    <!-- Carousel for Consultants -->
+<div class="carousel-container">
+    <div class="carousel">
+        <div class="consultant-card">
+            <img src="img/7.jpeg" alt="Consultant 1">
+            <div class="consultant-info">
+                <h3>Gray Matters</h3>
+                <div class="carousel-info">
+                    <p>SCO. 114, Main Market</p>
+                    <p> Sector 34, Chandigarh</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="consultant-card">
+            <img src="img/8.jpeg" alt="Consultant 2">
+            <div class="consultant-info">
+                <h3>Brills Institute</h3>
+                <div class="carousel-info">
+                    <p>SCO. 114, Main Market</p>
+                    <p> Sector 34, Chandigarh</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="consultant-card">
+            <img src="img/7.jpeg" alt="Consultant 3">
+            <div class="consultant-info">
+                <h3>Study Buddies</h3>
+                <div class="carousel-info">
+                    <p>SCO. 114, Main Market</p>
+                    <p> Sector 34, Chandigarh</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="consultants-header">
+    <h2>Latest Blogs</h2>
+    <button class="see-all">See All</button>
+</div>
+
+
+<!-- Blog Tabs Carousel -->
+<div class="blog-carousel-container">
+    <div class="blog-carousel">
+        <div class="blog-tab">
+            <img src="img/b1.jpeg" alt="Blog 1">
+            <div class="blog-info">
+                <h4>Study Abroad</h4>
+                <p>Lorem Ipsum is dummy
+                    text for printing industry.</p>
+                <button class="read-blog-btn">Read Blog <i class="bi bi-arrow-right"></i></button>
+            </div>
+        </div>
+
+        <div class="blog-tab">
+            <img src="img/b2.jpeg" alt="Blog 2">
+            <div class="blog-info">
+                <h4>Study Abroad</h4>
+                <p>Lorem Ipsum is dummy
+                    text for printing industry.</p>
+                <button class="read-blog-btn">Read Blog <i class="bi bi-arrow-right"></i></button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="hee"></div>
+<!-- Bottom Sticky Navigation Bar -->
+<div class="bottom-nav">
+    <div class="nav-item active">
+        <i class="bi bi-house-door-fill"></i>
+        <span>Home</span>
+    </div>
+    <div class="nav-item">
+        <i class="bi bi-file-earmark-text-fill"></i>
+        <span>Applications</span>
+    </div>
+    <div class="nav-item">
+        <i class="bi bi-person-fill"></i>
+        <span>Profile</span>
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,409 @@
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    /* Full-width header with #1E4F9F background */
+    .mobile-header {
+        background-color: #1E4F9F;
+        height: 60px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10px;
+    }
+
+    /* Text inside the mobile header */
+    .mobile-header h1 {
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* Search bar container */
+    .search-container {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 70px 10px 0; /* Push down under header */
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        height: 20px;
+    }
+
+    /* Bootstrap Search and Mic Icons */
+    .search-icon, .mic-icon {
+        font-size: 20px;
+        color: #1E4F9F;
+    }
+
+    /* Small vertical line */
+    .separator {
+        width: 1px;
+        height: 20px;
+        background-color: #ccc;
+        margin: 0 10px;
+    }
+
+    /* Search text */
+    .search-text {
+        flex: 1;
+        color: gray;
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* Address container */
+    .address-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+        font-size: 12px;
+        color: #333;
+        margin-top: 10px;
+    }
+
+    /* Address text */
+    .address-text {
+        flex: 1;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* Change button */
+    .change-button {
+        background: none;
+        border: none;
+        color: #1E4F9F;
+        font-size: 12px;
+        font-weight: bold;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    /* Image Container */
+    .image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .image-container img {
+        width: 95%;
+        height: auto;
+        max-width: 500px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+    }
+
+    /* Hide desktop content */
+    .desktop-content {
+        display: none;
+    }
+
+    /* Show mobile content */
+    .mobile-content {
+        display: block;
+        padding-top: 20px;
+    }
+}
+
+/* Restore desktop content when screen size increases */
+@media (min-width: 769px) {
+    .mobile-content {
+        display: none;
+    }
+    
+    .desktop-content {
+        display: block;
+    }
+
+    /* Adjust images for larger screens */
+    .image-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .image-container img {
+        width: 30%;
+        max-width: 300px;
+    }
+}
+/* Live Consultants Header */
+.consultants-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+
+.consultants-header h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.see-all {
+    background: none;
+    border: none;
+    color: #B4B4B4;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* Carousel Container */
+
+.carousel-container {
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    white-space: nowrap;
+    padding: 0px 0;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* Hide scrollbar for IE & Edge */
+    scrollbar-width: none;  /* Hide scrollbar for Firefox */
+}
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Consultant Cards */
+.consultant-card {
+    position: relative;
+    display: inline-block;
+    width: 170px;
+    height: 220px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Consultant Image */
+.consultant-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Rate Badge (Top Right) */
+.rate-badge {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    background-color: #1E4F9F;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    width: 60px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+/* Consultant Info (Overlapping Bottom) */
+.consultant-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: transparent;
+    color: white;
+    padding: 8px;
+    font-size: 14px;
+}
+
+/* Consultant Name */
+.consultant-info h3 {
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Consultant Meta Info */
+.consultant-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* Calls Count */
+.calls {
+    color: #ddd;
+}
+
+/* Rating */
+.rating {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 10px; /* Adjust vertical position */
+    right: 20px; /* Move slightly to the left */
+}
+
+/* Star Icon */
+.rating i {
+    color: gold;
+    margin-right: 4px;
+}
+
+.carousel-info p {
+    font-size: 15px;
+    margin: 5px 0 0;
+}
+/* Section Header */
+.carousel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.carousel-header h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.see-all-btn {
+    background: none;
+    border: none;
+    color: #B4B4B4;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Blog Carousel Container */
+.blog-carousel-container {
+    overflow: hidden;
+    padding: 10px;
+}
+
+.blog-carousel {
+    display: flex;
+    width: 610px;
+    gap: 15px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+/* Hide scrollbar */
+.blog-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+/* Blog Tab Styling */
+.blog-tab {
+    width: 410px;
+    height: 70px;
+    border-radius: 10px;
+    display: flex;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start;
+    padding: 10px;
+    align-items: center;
+}
+
+/* Image Styling */
+.blog-tab img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Blog Info Styling */
+.blog-info {
+    margin-left: 10px;
+    flex: 1;
+}
+
+.blog-info h4 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+.blog-info p {
+    font-size: 12px;
+    color: gray;
+    margin: 5px 0;
+}
+
+/* Read Blog Button */
+.read-blog-btn {
+    background: none;
+    border: none;
+    color: green;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.read-blog-btn i {
+    font-size: 14px;
+}
+.hee{
+    height: 80px;
+}
+/* Bottom Navigation Bar */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* Top shadow effect */
+}
+
+/* Individual Nav Items */
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #979797;
+    cursor: pointer;
+}
+
+/* Active (Selected) Icon */
+.nav-item.active {
+    color: #1C4CA0;
+}
+
+/* Icon Styling */
+.nav-item i {
+    font-size: 24px;
+    margin-bottom: 3px;
+}
