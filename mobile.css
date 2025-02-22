@@ -1,5 +1,5 @@
 /* Mobile-specific styles */
-@media (max-width: 768px) {
+@media (max-width: 1768px) {
     /* Full-width header with #1E4F9F background */
     .mobile-header {
         background-color: #1E4F9F;
